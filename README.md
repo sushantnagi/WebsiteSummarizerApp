@@ -49,7 +49,7 @@ Then open `http://localhost:8501` in your browser.
 
 - 📧 [sushantnagi667@gmail.com](mailto:sushantnagi667@gmail.com)
 - 💼 [LinkedIn](https://linkedin.com/in/sushant_nagi)
-- 🐱 [GitHub](https://github.com/sushant_nagi)
+- 🐱 [GitHub](https://github.com/sushantnagi)
 - 📸 [Instagram](https://instagram.com/sushant_nagi)
 
 ---

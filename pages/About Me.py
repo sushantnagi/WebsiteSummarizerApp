@@ -21,7 +21,7 @@ It's built purely for fun, learning, and exploration — not for commercial use.
 
 - 📧 [sushantnagi667@gmail.com](mailto:sushantnagi667@gmail.com)
 - [💼 LinkedIn](https://www.linkedin.com/in/sushant_nagi)  
-- [🐱 GitHub](https://github.com/sushant_nagi)  
+- [🐱 GitHub](https://github.com/sushantnagi)  
 - [📸 Instagram](https://instagram.com/sushant_nagi)
 """, unsafe_allow_html=True)
 
