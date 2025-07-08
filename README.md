@@ -1,5 +1,7 @@
 # 🧠 Website Summarizer App
 
+[Run on StreamLit](https://websitesummarizer-gemini.streamlit.app/)
+
 This is a simple Streamlit web app that scrapes content from any public webpage and uses Google's Gemini AI to generate a short, clean summary — skipping menus, navigation, and boilerplate.
 
 Built just for fun by [Sushant Nagi](https://instagram.com/sushant_nagi) 😄
