@@ -2,7 +2,7 @@
 
 This is a simple Streamlit web app that scrapes content from any public webpage and uses Google's Gemini AI to generate a short, clean summary — skipping menus, navigation, and boilerplate.
 
-Built just for fun by [Sushant Nagi](mailto:sushantnagi667@gmail.com) 😄
+Built just for fun by [Sushant Nagi](https://instagram.com/sushant_nagi) 😄
 
 ---
 
@@ -82,9 +82,9 @@ Then open `http://localhost:8501` in your browser.
 ## 📬 Contact
 
 - 📧 [sushantnagi667@gmail.com](mailto:sushantnagi667@gmail.com)
-- 💼 [LinkedIn](https://linkedin.com/in/sushantnagi)
-- 🐱 [GitHub](https://github.com/sushantnagi)
-- 📸 [Instagram](https://instagram.com/sushant.nagi)
+- 💼 [LinkedIn](https://linkedin.com/in/sushant_nagi)
+- 🐱 [GitHub](https://github.com/sushant_nagi)
+- 📸 [Instagram](https://instagram.com/sushant_nagi)
 
 ---
 
