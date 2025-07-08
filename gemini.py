@@ -1,28 +1,18 @@
 import os
 from dotenv import load_dotenv
-from google import genai
+import google.genai as genai
 from google.genai import types
 from scraper import Website
-
-# ────── Load API Key from .env ──────
-load_dotenv()
-api_key = os.getenv("GEMINI_API_KEY")
-if not api_key:
-    raise ValueError("❌ GEMINI_API_KEY not found in .env file.")
-
-# ────── Configure Gemini ──────
-client = genai.Client(api_key=api_key)
+import streamlit as st
 
 
-# ────── Prompt Templates ──────
-system_prompt = (
-    "You are an assistant that analyzes the contents of a website "
-    "and provides a short summary, ignoring text that might be navigation related. "
-    "Respond in markdown."
-)
+# Load Gemini client dynamically every time
+def get_genai_client():
+    api_key = st.session_state.get("user_api_key")
+    if not api_key:
+        raise ValueError("❌ No API key found. Please enter it on the homepage.")
+    return genai.Client(api_key=api_key)
 
-
-# ────── Main Summary Function ──────
 def summarize(url: str) -> str:
     website = Website(url)
     if website.error:
@@ -38,6 +28,7 @@ def summarize(url: str) -> str:
     )
 
     try:
+        client = get_genai_client()  # dynamically load key
         response = client.models.generate_content(
             model="gemini-2.5-flash",
             contents=prompt,
@@ -46,8 +37,5 @@ def summarize(url: str) -> str:
             )
         )
         return response.text.strip()
-
     except Exception as e:
         return f"❌ Gemini API Error: {str(e)}"
-
-

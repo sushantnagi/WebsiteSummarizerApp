@@ -1,4 +1,6 @@
 import streamlit as st
+from API_Editor import update_gemini_api_key
+
 
 st.set_page_config(
     page_title="Website Summarizer",
@@ -26,6 +28,22 @@ st.markdown('<div class="container">', unsafe_allow_html=True)
 
 # Image container with scaled-down size
 st.image("anime-welcome.gif", width=240, use_container_width=False)
+
+# API Key
+st.markdown("### 🔐 Enter your Gemini API Key")
+st.markdown("You can get one for free here: [Google AI Studio](https://aistudio.google.com/apikey)")
+
+with st.form("api_form"):
+    user_key = st.text_input("Your Gemini API Key", type="password")
+    save_key = st.form_submit_button("Save Key")
+
+if save_key:
+    if not user_key.strip():
+        st.error("API key cannot be empty.")
+    else:
+        st.session_state["user_api_key"] = user_key
+        st.success("✅ API key saved for this session!")
+
 
 # Text and form section
 st.markdown('<div class="form-area">', unsafe_allow_html=True)

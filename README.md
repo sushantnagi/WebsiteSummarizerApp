@@ -7,6 +7,12 @@ This is a simple Streamlit web app that scrapes content from any public webpage 
 Built just for fun by [Sushant Nagi](https://instagram.com/sushant_nagi) 😄
 
 ---
+## 🔄 Update 1.0
+
+- 🔐 Added user input for **Gemini API key** (no longer hardcoded or stored in `.env`)
+- 🧠 API key now stored using `st.session_state` — per-user, per-session memory
+- 💡 This makes the app safe for **Streamlit Cloud deployment**
+- 🧪 `.env`-based fallback removed for simplicity
 
 ## 🚀 Features
 
