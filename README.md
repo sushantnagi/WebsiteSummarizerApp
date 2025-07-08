@@ -11,6 +11,7 @@ Built just for fun by [Sushant Nagi](https://instagram.com/sushant_nagi) 😄
 ## 🚀 Features
 
 - 🌐 Enter any website URL
+- 🔹 Fixes the URL (Adds https://)
 - 🧽 Cleans out unwanted tags (scripts, ads, navbars)
 - 🤖 Uses Gemini 2.5 Flash (free-tier friendly) to generate summaries
 - 📄 Outputs summaries in Markdown format
@@ -28,36 +29,6 @@ Built just for fun by [Sushant Nagi](https://instagram.com/sushant_nagi) 😄
 
 ---
 
-## 🧪 Installation
-
-1. Clone the repo:
-
-```bash
-git clone https://github.com/yourusername/website-summarizer-app.git
-cd website-summarizer-app
-```
-
-2. (Optional) Create a virtual environment:
-
-```bash
-python -m venv .venv
-source .venv/bin/activate  # or .venv\Scripts\activate on Windows
-```
-
-3. Install dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-
-4. Add your Gemini API key to a `.env` file:
-
-```env
-GEMINI_API_KEY=your_api_key_here
-```
-
----
-
 ## ▶️ Run the App
 
 ```bash
@@ -65,19 +36,6 @@ streamlit run app.py
 ```
 
 Then open `http://localhost:8501` in your browser.
-
----
-
-## 📸 Screenshot
-
-![screenshot](preview.png)
-
----
-
-## 🧠 Quote at the Footer
-
-> *"Finally, brethren, whatsoever things are true..."*  
-> — Philippians 4:8
 
 ---
 
@@ -98,6 +56,3 @@ Free API limits from Google Gemini may affect availability.
 
 ---
 
-## ✨ License
-
-MIT — use freely, learn endlessly.
